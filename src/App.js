@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import avatar from "./avatar.png";
 import "./App.css";
 
 class App extends Component {
@@ -18,7 +18,7 @@ class App extends Component {
 const Sidebar = props => (
   <div className="sidebar fullHeight">
     <div className="contact-card flex-row">
-      <Avatar file="./avatar.png" />
+      <Avatar file={avatar} />
       <div className="person-container">
         <Name name="Person Name" />
         <Description desc="LMAO ROFL...IPSUM" />
@@ -26,12 +26,11 @@ const Sidebar = props => (
     </div>
     {[2, 3, 4, 5].map(item => (
       <div className="contact-card" key={item}>
-        Hello {item}
-        {/* <Avatar />
+        <Avatar />
         <div className="person-container">
-          <Name name="Person Name" />
-          <Description desc="LMAO ROFL...IPSUM" />
-        </div> */}
+          <Name name="" />
+          <Description desc="" />
+        </div>
       </div>
     ))}
   </div>
@@ -39,6 +38,7 @@ const Sidebar = props => (
 
 const ChatWindow = props => (
   <div className="chatwindow fullHeight">
+    <ChatMessage text="LMAO ROFL...IPSUM" />
     <InputField />
   </div>
 );
@@ -73,5 +73,9 @@ const InputField = props => {
       <input type="text" placeholder="You can write words here!" />
     </div>
   );
+};
+
+const ChatMessage = props => {
+  return <div className="message">{props.text}</div>;
 };
 export default App;
