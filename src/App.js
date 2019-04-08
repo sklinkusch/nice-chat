@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import avatar from "./avatar.png";
+import avatar2 from "./avatar2.png";
 import "./App.css";
 
 class App extends Component {
@@ -38,7 +39,7 @@ const Sidebar = props => (
 
 const ChatWindow = props => (
   <div className="chatwindow fullHeight">
-    <ChatMessage text="LMAO ROFL...IPSUM" />
+    <ChatMessage text="LMAO ROFL...IPSUM" file={avatar2} />
     <InputField />
   </div>
 );
@@ -76,6 +77,15 @@ const InputField = props => {
 };
 
 const ChatMessage = props => {
-  return <div className="message">{props.text}</div>;
+  return (
+    <div className="message-container">
+      <div className="message">
+        <div className="messageText">{props.text}</div>
+      </div>
+      <div className="avatar-ct">
+        <img src={props.file} alt="avatar" />
+      </div>
+    </div>
+  );
 };
 export default App;
