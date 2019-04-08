@@ -3,6 +3,7 @@ import avatar from "./avatar.png";
 import avatar2 from "./avatar2.png";
 import "./App.css";
 
+// Main part
 class App extends Component {
   render() {
     return (
@@ -15,6 +16,13 @@ class App extends Component {
     );
   }
 }
+
+// Parts
+
+const Row = props => {
+  console.log(props);
+  return <div className="flex-row">{props.children}</div>;
+};
 
 const Sidebar = props => (
   <div className="sidebar fullHeight">
@@ -43,10 +51,7 @@ const ChatWindow = props => (
   </div>
 );
 
-const Row = props => {
-  console.log(props);
-  return <div className="flex-row">{props.children}</div>;
-};
+// Sidebar
 
 const Avatar = props => {
   if (props.file) {
@@ -67,6 +72,11 @@ const Description = props => {
   return <div className="description">{props.desc}</div>;
 };
 
+const Dot = props => {
+  const klasse = `dot ${props.color}`;
+  return <div className={klasse} />;
+};
+
 const InputField = props => {
   return (
     <div className="inputfield">
@@ -74,6 +84,8 @@ const InputField = props => {
     </div>
   );
 };
+
+// Message window
 
 const ChatMessage = props => {
   if (props.left) {
@@ -100,8 +112,4 @@ const ChatMessage = props => {
   );
 };
 
-const Dot = props => {
-  const klasse = `dot ${props.color}`;
-  return <div className={klasse} />;
-};
 export default App;
