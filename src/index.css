@@ -1,3 +1,11 @@
+:root {
+  --pale-grey: #f2f3fd;
+  --dusk: #3c3e58;
+  --white: #ffffff;
+  --steel: #76778a;
+  --bluey-purple: #673dcb;
+}
+
 body {
   margin: 0;
   padding: 0;
