@@ -84,6 +84,7 @@
   margin-bottom: 19px;
   height: 48px;
   border-radius: 30px;
+  overflow: hidden;
 }
 
 .inputfield input {
@@ -91,6 +92,7 @@
   height: 100%;
   border-radius: 30px;
   padding-left: 24px;
+  padding-right: 24px;
   border: none;
 }
 
