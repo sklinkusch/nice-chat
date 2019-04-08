@@ -125,6 +125,11 @@
   margin-left: 9px;
 }
 
+.message-left,
+.message-right {
+  padding-top: 10px;
+}
+
 .message-right {
   width: 173px;
   height: 48px;
