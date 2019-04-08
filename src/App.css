@@ -51,8 +51,8 @@
   margin-left: 8px;
   margin-top: 8px;
   margin-bottom: 8px;
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   background-image: url("./avatar.png");
 }
 
@@ -121,7 +121,7 @@
   margin-left: 9px;
 }
 
-.message {
+.message-right {
   width: 173px;
   height: 48px;
   border-radius: 18px;
@@ -129,12 +129,45 @@
     0 2px 4px 0 rgba(160, 181, 245, 0.19);
   background-color: var(--white);
   margin: 16px 18px 15px 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.messageText {
+.message-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-start {
+  align-self: flex-start;
+}
+
+.flex-end {
+  align-self: flex-end;
+}
+
+.message-left {
+  width: 331px;
+  height: 87px;
+  border-radius: 18px;
+  box-shadow: 0 3px 11px 0 rgba(129, 129, 129, 0.31),
+    0 2px 4px 0 rgba(160, 181, 245, 0.19);
+  background-color: var(--white);
+}
+
+.messageText:nth-of-type(1) {
+  width: 302px;
+  height: 68px;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--dusk);
+  margin: 10px 13px 9px 16px;
+}
+
+.messageText:nth-of-type(2) {
   width: 137px;
   height: 17px;
   font-family: Lato;
@@ -145,12 +178,22 @@
   line-height: normal;
   letter-spacing: normal;
   color: var(--dusk);
+  margin: 16px 18px 15px 18px;
 }
 
-.message-container {
-  display: flex;
-  flex-direction: row;
-  align-self: flex-end;
+.message-container:nth-of-type(2) {
   height: 69px;
   margin-bottom: 21px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  align-self: center;
+  margin-right: 6px;
+}
+
+.bluey-purple {
+  background-color: var(--bluey-purple);
+  border-radius: 6px;
 }

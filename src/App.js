@@ -18,20 +18,14 @@ class App extends Component {
 
 const Sidebar = props => (
   <div className="sidebar fullHeight">
-    <div className="contact-card flex-row">
-      <Avatar file={avatar} />
-      <div className="person-container">
-        <Name name="Person Name" />
-        <Description desc="LMAO ROFL...IPSUM" />
-      </div>
-    </div>
-    {[2, 3, 4, 5].map(item => (
-      <div className="contact-card" key={item}>
-        <Avatar />
+    {[1, 2, 3, 4, 5].map(item => (
+      <div className="contact-card flex-row" key={item}>
+        <Avatar file={avatar} />
         <div className="person-container">
-          <Name name="" />
-          <Description desc="" />
+          <Name name="Person Name" />
+          <Description desc="LMAO ROFL...IPSUM" />
         </div>
+        <Dot color="bluey-purple" />
       </div>
     ))}
   </div>
@@ -39,7 +33,12 @@ const Sidebar = props => (
 
 const ChatWindow = props => (
   <div className="chatwindow fullHeight">
-    <ChatMessage text="LMAO ROFL...IPSUM" file={avatar2} />
+    <ChatMessage
+      text="Do you know that: Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus"
+      file={avatar}
+      left={true}
+    />
+    <ChatMessage text="LMAO ROFL...IPSUM" file={avatar2} left={false} />
     <InputField />
   </div>
 );
@@ -77,9 +76,21 @@ const InputField = props => {
 };
 
 const ChatMessage = props => {
+  if (props.left) {
+    return (
+      <div className="message-container flex-start">
+        <div className="avatar-ct">
+          <img src={props.file} alt="avatar" />
+        </div>
+        <div className="message-left">
+          <div className="messageText">{props.text}</div>
+        </div>
+      </div>
+    );
+  }
   return (
-    <div className="message-container">
-      <div className="message">
+    <div className="message-container flex-end">
+      <div className="message-right">
         <div className="messageText">{props.text}</div>
       </div>
       <div className="avatar-ct">
@@ -87,5 +98,10 @@ const ChatMessage = props => {
       </div>
     </div>
   );
+};
+
+const Dot = props => {
+  const klasse = `dot ${props.color}`;
+  return <div className={klasse} />;
 };
 export default App;
