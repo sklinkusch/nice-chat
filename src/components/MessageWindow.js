@@ -1,7 +1,8 @@
 import React from "react";
 import chat from "./chat";
-import avatar from "../avatar.png";
-import avatar2 from "../avatar2.png";
+import avatar from "../images/avatar.png";
+import avatar2 from "../images/avatar2.png";
+import "../styles/MessageWindow.css";
 
 // Message window
 

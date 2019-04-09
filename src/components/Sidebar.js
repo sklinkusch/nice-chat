@@ -1,5 +1,6 @@
 import React from "react";
 import ContactCard from "./ContactCard";
+import "../styles/Sidebar.css";
 
 const Sidebar = props => (
   <div className="sidebar fullHeight">

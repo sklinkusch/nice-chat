@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Sidebar from "./components/Sidebar";
-import ChatWindow from "./components/MessageWindow";
-import "./App.css";
+import Sidebar from "./Sidebar";
+import ChatWindow from "./MessageWindow";
+import "../styles/App.css";
 
 // Main part
 class App extends Component {
