@@ -1,8 +1,9 @@
 import React from "react";
+import avatar from "../avatar.png";
 
 const ContactCard = props => (
   <div className="contact-card flex-row" key={props.item}>
-    <Avatar file={props.avatar} />
+    <Avatar file={avatar} />
     <div className="person-container">
       <Name name={props.name} />
       <Description desc={props.desc} />
