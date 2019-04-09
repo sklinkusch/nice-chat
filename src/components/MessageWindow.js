@@ -1,4 +1,5 @@
 import React from "react";
+import chat from "./chat";
 import avatar from "../avatar.png";
 import avatar2 from "../avatar2.png";
 
@@ -6,12 +7,8 @@ import avatar2 from "../avatar2.png";
 
 const ChatWindow = props => (
   <div className="chatwindow fullHeight">
-    <ChatMessage
-      text="Do you know that: Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus"
-      file={avatar}
-      left={true}
-    />
-    <ChatMessage text="LMAO ROFL...IPSUM" file={avatar2} left={false} />
+    <ChatMessage text={chat[0].message} file={avatar} left={chat[0].left} />
+    <ChatMessage text={chat[1].message} file={avatar2} left={chat[1].left} />
     <InputField />
   </div>
 );
