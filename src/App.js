@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ChatWindow from "./components/MessageWindow";
 import avatar from "./avatar.png";
 import avatar2 from "./avatar2.png";
 import "./App.css";
@@ -39,18 +40,6 @@ const Sidebar = props => (
   </div>
 );
 
-const ChatWindow = props => (
-  <div className="chatwindow fullHeight">
-    <ChatMessage
-      text="Do you know that: Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus"
-      file={avatar}
-      left={true}
-    />
-    <ChatMessage text="LMAO ROFL...IPSUM" file={avatar2} left={false} />
-    <InputField />
-  </div>
-);
-
 // Sidebar
 
 const Avatar = props => {
@@ -76,40 +65,4 @@ const Dot = props => {
   const klasse = `dot ${props.color}`;
   return <div className={klasse} />;
 };
-
-const InputField = props => {
-  return (
-    <div className="inputfield">
-      <input type="text" placeholder="You can write words here!" />
-    </div>
-  );
-};
-
-// Message window
-
-const ChatMessage = props => {
-  if (props.left) {
-    return (
-      <div className="message-container flex-start">
-        <div className="avatar-ct">
-          <img src={props.file} alt="avatar" />
-        </div>
-        <div className="message-left">
-          <div className="messageText">{props.text}</div>
-        </div>
-      </div>
-    );
-  }
-  return (
-    <div className="message-container flex-end">
-      <div className="message-right">
-        <div className="messageText">{props.text}</div>
-      </div>
-      <div className="avatar-ct">
-        <img src={props.file} alt="avatar" />
-      </div>
-    </div>
-  );
-};
-
 export default App;
