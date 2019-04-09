@@ -1,0 +1,15 @@
+{
+  "main.css": "/nice-chat/static/css/main.ef5225fb.chunk.css",
+  "main.js": "/nice-chat/static/js/main.c1956936.chunk.js",
+  "main.js.map": "/nice-chat/static/js/main.c1956936.chunk.js.map",
+  "runtime~main.js": "/nice-chat/static/js/runtime~main.28471973.js",
+  "runtime~main.js.map": "/nice-chat/static/js/runtime~main.28471973.js.map",
+  "static/js/2.8fa3d35f.chunk.js": "/nice-chat/static/js/2.8fa3d35f.chunk.js",
+  "static/js/2.8fa3d35f.chunk.js.map": "/nice-chat/static/js/2.8fa3d35f.chunk.js.map",
+  "index.html": "/nice-chat/index.html",
+  "precache-manifest.cbe0a1e26c067f3349d1f66323209295.js": "/nice-chat/precache-manifest.cbe0a1e26c067f3349d1f66323209295.js",
+  "service-worker.js": "/nice-chat/service-worker.js",
+  "static/css/main.ef5225fb.chunk.css.map": "/nice-chat/static/css/main.ef5225fb.chunk.css.map",
+  "static/media/avatar.png": "/nice-chat/static/media/avatar.d7cd886c.png",
+  "static/media/avatar2.png": "/nice-chat/static/media/avatar2.69f2b463.png"
+}
