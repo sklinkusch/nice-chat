@@ -2,7 +2,7 @@
   "name": "nice-chat",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://fbw-12.github.io/20-nice-chat-sklinkusch",
+  "homepage": "http://sklinkusch.github.io/nice-chat",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",
