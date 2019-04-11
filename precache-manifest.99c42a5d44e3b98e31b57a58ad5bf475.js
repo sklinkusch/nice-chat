@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/nice-chat/static/css/main.ef5225fb.chunk.css"
   },
   {
-    "revision": "56a4546287da1c6d4066619dccf61162",
+    "revision": "5220b444c66f6003ac1893effccd368d",
     "url": "/nice-chat/index.html"
   }
 ];

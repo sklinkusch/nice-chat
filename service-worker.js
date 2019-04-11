@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/nice-chat/precache-manifest.cbe0a1e26c067f3349d1f66323209295.js"
+  "/nice-chat/precache-manifest.99c42a5d44e3b98e31b57a58ad5bf475.js"
 );
 
 workbox.clientsClaim();
